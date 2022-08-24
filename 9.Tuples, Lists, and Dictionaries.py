@@ -90,4 +90,41 @@ def nine_point_five():
     print(f'the {n[1]} {v[2]} {prep[1]} a {adj[2]} {n[2]}')
 
 
-nine_point_five()
+def nine_point_six():
+    captains = {
+        'Enterprise':'Picard',
+        'Voyager':'Janeway',
+        'Defiant':'Sisko',
+    }
+
+    if not 'Enterprise' in captains:
+        captains['Enterprise'] = 'unknown'
+    if not 'Discovery' in captains:
+        captains['Discovery'] = 'unknown'
+    
+    del captains['Discovery']
+    
+    for ship, captain in captains.items():
+        print(f'The {ship} is captained by {captain}')
+
+
+def nine_pont_nine():
+    '''Challenge: Cats With Hats'''
+    cats = dict([(i,'Hat') for i in range(1,101)])
+    cats_with_hats = []
+    
+    for i in range(1, 101):
+        for j in range(i, 101, i):
+            cats[j] = 'Hat' if cats[j] == 'No Hat' else 'No Hat'
+    
+    for cat, hat in cats.items():
+        if hat == 'Hat':
+            cats_with_hats.append(cat)
+
+    print(cats_with_hats)
+
+
+    
+
+
+nine_pont_nine()
