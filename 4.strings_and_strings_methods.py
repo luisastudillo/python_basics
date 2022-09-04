@@ -86,12 +86,12 @@ def four_point_seven():
     print(f'{weight} kg is the weight of the {animal}')
 
 def four_point_eight():
-    print('Find a String in a String')
+    print('Find a String in a String(Only the first occurrence)')
     phrase = "the surprise is in here somewhere"
     print(phrase.find("surprise"))
     print(phrase.find("eyjafjallajökull"))
 
-    print('Replace a String in a String')
+    print('Replace a String in a String(All the occurrences)')
     my_story = "I'm telling you the truth; nothing but the truth!"
     my_story = my_story.replace("the truth", "lies")
     print(my_story)
